@@ -136,7 +136,20 @@
       <DataType>datetime|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="39" parent="11">
+    <column id="39" parent="11" name="password_digest">
+      <Position>5</Position>
+      <DataType>varchar|0</DataType>
+    </column>
+    <column id="40" parent="11" name="remember_digest">
+      <Position>6</Position>
+      <DataType>varchar|0</DataType>
+    </column>
+    <index id="41" parent="11" name="index_users_on_email">
+      <ColNames>email</ColNames>
+      <ColumnCollations></ColumnCollations>
+      <Unique>1</Unique>
+    </index>
+    <key id="42" parent="11">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
