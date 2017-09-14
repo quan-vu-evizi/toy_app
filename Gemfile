@@ -9,7 +9,11 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'
 
-gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
+gem "activerecord-postgis-adapter"
+gem "pg"
+gem "paperclip"#, git: "https://github.com/quan-vu-evizi/paperclip.git"
+
+gem 'bcrypt'#, git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 
 gem 'bootstrap-sass', '3.3.7'
 # Use sqlite3 as the database for Active Record
@@ -46,11 +50,13 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem "rspec-rails"
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
+  gem "annotate"
 end
 
 group :test do
@@ -60,5 +66,7 @@ group :test do
   #gem 'guard-minitest',           '2.4.4'
 end
 
+gem 'letter_opener', group: [:development,:production]
+gem "dotenv-rails", groups: [:development, :production, :test]
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

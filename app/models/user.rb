@@ -1,3 +1,16 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id              :integer          not null, primary key
+#  name            :string
+#  email           :string
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#  password_digest :string
+#  remember_digest :string
+#
+
 class User < ApplicationRecord
   attr_accessor :remember_token
   before_save { self.email = email.downcase }
@@ -10,6 +23,12 @@ class User < ApplicationRecord
   has_secure_password
   validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
 
+  has_attached_file :avatar,
+                    :path => ":rails_root/public/system/users/images/:id/:style/:filename",
+                    :url => "/system/users/images/:id/:style/:filename",
+                    :default_url => "/images/:style/missing.png",
+                    :styles => { :medium => "300x300>", :thumb => "100x100#" }
+  validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
   class << self
   # Returns the hash digest of the given string.
     def digest(string)
