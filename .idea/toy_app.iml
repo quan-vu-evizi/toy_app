@@ -59,6 +59,7 @@
     <orderEntry type="library" scope="PROVIDED" name="coffee-rails (v4.2.2, ruby-2.2.5-p319) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-script (v2.4.1, ruby-2.2.5-p319) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-script-source (v1.12.2, ruby-2.2.5-p319) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="commonjs (v0.2.7, ruby-2.2.5-p319) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.0.5, ruby-2.2.5-p319) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.3, ruby-2.2.5-p319) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="dotenv (v2.2.1, ruby-2.2.5-p319) [gem]" level="application" />
@@ -71,8 +72,11 @@
     <orderEntry type="library" scope="PROVIDED" name="guard (v2.13.0, ruby-2.2.5-p319) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v0.8.6, ruby-2.2.5-p319) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.7.0, ruby-2.2.5-p319) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jquery-fileupload-rails (v0.4.7, ruby-2.2.5-p319) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v4.1.1, ruby-2.2.5-p319) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="launchy (v2.4.3, ruby-2.2.5-p319) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="less (v2.6.0, ruby-2.2.5-p319) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="less-rails (v2.8.0, ruby-2.2.5-p319) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="letter_opener (v1.4.1, ruby-2.2.5-p319) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="listen (v3.1.5, ruby-2.2.5-p319) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.0.3, ruby-2.2.5-p319) [gem]" level="application" />

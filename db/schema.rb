@@ -35,6 +35,15 @@ ActiveRecord::Schema.define(version: 20170913020959) do
     t.index ["parent_id", "parent_type"], name: "index_pictures_on_parent_id_and_parent_type"
   end
 
+  create_table "uploads", force: :cascade do |t|
+    t.string "upload_file_name"
+    t.string "upload_content_type"
+    t.integer "upload_file_size"
+    t.datetime "upload_updated_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email"
