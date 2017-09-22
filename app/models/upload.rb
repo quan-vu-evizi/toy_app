@@ -14,7 +14,8 @@ class Upload < ActiveRecord::Base
     {
       "name" => read_attribute(:upload_file_name),
       "size" => read_attribute(:upload_file_size),
-      "url" => upload.url(:original),
+      #"thumbnail_url" => upload.url(:original),
+      "thumbnail_url" => upload.url(:thumb),
       "delete_url" => upload_path(self),
       "delete_type" => "DELETE" 
     }
