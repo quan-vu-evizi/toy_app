@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170913020959) do
+ActiveRecord::Schema.define(version: 20170922085907) do
 
   create_table "microposts", force: :cascade do |t|
     t.text "content"
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 20170913020959) do
     t.datetime "upload_updated_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "sort_order", default: 0, null: false
   end
 
   create_table "users", force: :cascade do |t|

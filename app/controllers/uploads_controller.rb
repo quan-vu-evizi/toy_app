@@ -43,8 +43,11 @@ class UploadsController < ApplicationController
     #params.require(:upload).permit(:upload)
     @upload = Upload.new(upload_params)
 
+    new_sort_order = (Upload.maximum(:sort_order) || 0) + 1
+
     respond_to do |format|
       if @upload.save
+        @upload.update_column :sort_order, new_sort_order
         format.html {
           render :json => [@upload.to_jq_upload].to_json,
           :content_type => 'text/html',

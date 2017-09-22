@@ -16,10 +16,6 @@
 #  image_file_size    :integer
 #  image_updated_at   :datetime
 #
-# Indexes
-#
-#  index_pictures_on_parent_id_and_parent_type  (parent_id,parent_type)
-#
 
 class Avatar < Picture
   def self.image_styles
