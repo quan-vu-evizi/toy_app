@@ -1,0 +1,19 @@
+<div class="container">
+  <h2>Upload file</h2>
+  <%= form_for Upload.new, :html => {:multipart => true, :id => "fileupload"} do |f| %>
+      <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
+      <div class="row fileupload-buttonbar">
+      </div>
+      Hello this is calalog
+     <%= Uploads.each_with_index do |upload, i| %>
+
+      <p>Hello <%=i %></p>
+
+      <% end %>
+
+      </div>
+
+
+  <% end %>
+
+</div>

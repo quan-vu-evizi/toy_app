@@ -11,7 +11,7 @@ gem 'rails', '~> 5.1.3'
 
 gem "activerecord-postgis-adapter"
 gem "pg"
-gem "paperclip"#, git: "https://github.com/quan-vu-evizi/paperclip.git"
+gem "paperclip"#, git: "git://github.com/thoughtbot/paperclip.git"
 
 gem 'bcrypt'#, git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 

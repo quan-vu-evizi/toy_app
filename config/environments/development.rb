@@ -50,8 +50,9 @@ Rails.application.configure do
 
   # routes, locales, etc. This feature depends on the listen gem.
   # config.file_watcher = ActiveSupport::EventedFileUpdateChecker
-  Paperclip.options[:command_path] = 'C:\gnuwin32\bin'
+  #Paperclip.options[:command_path] = 'C:\Program Files (x86)\GnuWin32\bin'
   #Paperclip.options[:command_path] = 'C:\Program Files\ImageMagick-7.0.7-Q16'
-  Paperclip.options[:swallow_stderr] = false
+  #Paperclip.options[:command_path] = 'C:/PROGRA~1/IMAGEM~1.0-Q'
+  #Paperclip.options[:swallow_stderr] = false
 end
 # Use an evented file watcher to asynchronously detect changes in source code,

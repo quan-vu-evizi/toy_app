@@ -89,6 +89,18 @@ class UploadsController < ApplicationController
     end
   end
 
+  def sort
+    upload_ids = params[:ids].split(",").map(&:to_i)
+    Uploads.transaction do
+      upload_ids.each_with_index do |id, i|
+        Upload.find(id).update_columns(sort_order: i + 1)
+      end
+    end
+  end
+
+  def list
+
+  end
 
   # Before filters
   def upload_params
